@@ -93,12 +93,12 @@ function taskCompleted (){
 }
 
 
-const taskIncomplete = function(){
+function taskIncomplete (){
     console.log("Incomplete Task...");
 
     const listItem = this.parentNode;
     listItem.querySelector(".task-item__label").classList.remove("task-item__label_completed");
-    incompleteTaskHolder.appendChild(listItem);
+    incompleteTaskHolder.append(listItem);
     bindTaskEvents(listItem, taskCompleted);
 }
 
