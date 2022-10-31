@@ -129,6 +129,9 @@ input {
 }
 
 /* New Task */
+.create-section{
+  margin: 1rem 0;
+}
 .new-task-label {
 
   display: block;
