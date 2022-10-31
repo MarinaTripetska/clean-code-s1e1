@@ -4,21 +4,21 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.banner-thumb {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.banner-thumb img {
     width: 100%;
 }
-.aaa .more-inf {
+.banner-thumb .banner-link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.banner-thumb { text-align: center;
 }
 }
 .centered-main-page-element {
