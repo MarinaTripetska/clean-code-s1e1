@@ -51,20 +51,18 @@ function addTask (){
     taskInput.value = "";
 }
 
-const editTask = function(){
+function editTask (){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
     const listItem = this.parentNode;
 
-    const editInput = listItem.querySelector('input[type=text]');
-    const label = listItem.querySelector("label");
+    const editInput = listItem.querySelector('.task-item__input');
+    const label = listItem.querySelector(".task-item__label");
     const editBtn = listItem.querySelector(".task-item__edit-btn");
 
     const containsClass = listItem.classList.contains("task-item_edit");
     if(containsClass){
-        //switch to .task-item_edit
-        //label becomes the inputs value.
         label.innerText = editInput.value;
         editBtn.innerText = "Edit";
     } else {
