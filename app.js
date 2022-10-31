@@ -92,7 +92,6 @@ function taskCompleted (){
 
 }
 
-
 function taskIncomplete (){
     console.log("Incomplete Task...");
 
@@ -102,9 +101,7 @@ function taskIncomplete (){
     bindTaskEvents(listItem, taskCompleted);
 }
 
-
-
-const ajaxRequest = function(){
+function ajaxRequest (){
     console.log("AJAX Request");
 }
 
