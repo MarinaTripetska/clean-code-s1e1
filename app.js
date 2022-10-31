@@ -73,7 +73,7 @@ function editTask (){
     listItem.classList.toggle("task-item_edit");
 };
 
-const deleteTask = function(){
+function deleteTask(){
     console.log("Delete Task...");
 
     const listItem = this.parentNode;
