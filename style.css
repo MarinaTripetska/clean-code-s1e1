@@ -1,14 +1,14 @@
 /* Remove default styles */
 .list {
 
-  margin:0;
+  margin: 0;
   padding: 0px;
 
 }
 
-input{
+input {
 
-  outline:none;
+  outline: none;
 
 }
 
@@ -42,7 +42,7 @@ input{
 
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .banner-thumb {
 
@@ -83,7 +83,7 @@ input{
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
-  outline:none;
+  outline: none;
 
 }
 
@@ -171,7 +171,7 @@ input{
 
 }
 
-.task-item-input{
+.task-item-input {
 
   width: 226px
 
@@ -202,19 +202,19 @@ input{
 /* Edit Task */
 .task-item-input {
 
-  display:none
+  display: none
 
 }
 
 .task-item.edit-mode .task-item-input {
 
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 
 }
 
 .task-item.edit-mode .task-item-label {
 
-  display:none;
+  display: none;
 
 }
