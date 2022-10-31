@@ -3,6 +3,9 @@ const addButton = document.querySelector(".create__btn");
 const incompleteTaskHolder = document.querySelector(".section__list_incomplete");
 const completedTasksHolder = document.querySelector(".section__list_completed");
 
+addButton.addEventListener("click", addTask);
+addButton.addEventListener("click", ajaxRequest);
+
 function createNewTaskElement (taskString){
     const listItem = document.createElement("li");
     listItem.className = "task-item";
@@ -91,11 +94,6 @@ function taskIncomplete (){
 }
 
 function ajaxRequest (){}
-
-addButton.onclick = addTask;
-addButton.addEventListener("click", addTask);
-addButton.addEventListener("click", ajaxRequest);
-
 
 const bindTaskEvents = function(taskListItem, checkBoxEventHandler){
     const checkBox = taskListItem.querySelector("input[type=checkbox]");
