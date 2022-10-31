@@ -36,10 +36,13 @@ function createNewTaskElement (taskString){
     return listItem;
 }
 
-const addTask = function(){
+function addTask (){
     console.log("Add Task...");
 
-    if (!taskInput.value) return;
+    if (!taskInput.value){
+        return;
+    };
+
     let listItem = createNewTaskElement(taskInput.value);
 
     incompleteTaskHolder.appendChild(listItem);
