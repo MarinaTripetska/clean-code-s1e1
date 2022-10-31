@@ -73,7 +73,7 @@ function editTask (){
     listItem.classList.toggle("task-item_edit");
 };
 
-function deleteTask(){
+function deleteTask (){
     console.log("Delete Task...");
 
     const listItem = this.parentNode;
@@ -82,12 +82,12 @@ function deleteTask(){
 
 }
 
-const taskCompleted = function(){
+function taskCompleted (){
     console.log("Complete Task...");
 
     const listItem = this.parentNode;
     listItem.querySelector(".task-item__label").classList.add("task-item__label_completed");
-    completedTasksHolder.appendChild(listItem);
+    completedTasksHolder.append(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
 }
