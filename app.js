@@ -95,8 +95,8 @@ function taskIncomplete (){
 
 function ajaxRequest (){}
 
-const bindTaskEvents = function(taskListItem, checkBoxEventHandler){
-    const checkBox = taskListItem.querySelector("input[type=checkbox]");
+function bindTaskEvents (taskListItem, checkBoxEventHandler){
+    const checkBox = taskListItem.querySelector(".task-item__checkbox");
     const editButton = taskListItem.querySelector(".task-item__edit-btn");
     const deleteButton = taskListItem.querySelector(".task-item__delete-btn");
 
