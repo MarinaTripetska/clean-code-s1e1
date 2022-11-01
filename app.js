@@ -110,6 +110,6 @@ for (let i = 0; i < incompleteTaskHolder.children.length; i++){
     bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
-for (let i=0; i<completedTasksHolder.children.length;i++){
+for (let i = 0; i < completedTasksHolder.children.length; i++){
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
